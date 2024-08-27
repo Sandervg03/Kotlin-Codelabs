@@ -15,7 +15,7 @@ import com.example.example.logistic.getRandomNumber
 @Composable
 fun nextRollButton(onClickFunction: () -> Unit) {
     Button(
-        onClick = {onClickFunction()},
+        onClick = onClickFunction,
         modifier = Modifier
             .padding(10.dp),
         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))

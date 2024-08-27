@@ -65,10 +65,10 @@ class MainActivity : ComponentActivity() {
             instruction()
             diceToDisplay(diceValueToImageId(currentDiceValue))
             totalDiceRollsValue(amountOfDiceRolled, totalOfRolledDiceValues)
-            nextRollButton(onClickFunction = { newDiceValue: Int ->
-                currentDiceValue = newDiceValue
+            nextRollButton(onClickFunction = {
+                currentDiceValue = getRandomNumber()
                 amountOfDiceRolled+= 1
-                totalOfRolledDiceValues += newDiceValue
+                totalOfRolledDiceValues += currentDiceValue
             })
         }
     }

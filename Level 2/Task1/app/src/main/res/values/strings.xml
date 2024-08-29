@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <string name="title">Quiz!</string>
+    <string name="instruction">
+        To play the quiz, press the correct button if you think the
+        statement is correct, and the incorrect button if incorrect.
+    </string>
+    <string name="correct">You are right!</string>
+    <string name="incorrect">You are wrong...</string>
+</resources>

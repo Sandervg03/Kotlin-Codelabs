@@ -91,35 +91,42 @@ fun ScreenContent(paddingValues: PaddingValues) {
         )
             {
             items(questionRemember) { question ->
-                Paragraph(text = question.question, modifier = Modifier.padding(5.dp), fontSize = 15)
-                Row(horizontalArrangement = Arrangement.SpaceAround) {
-                    Button(
-                        onClick = { if (question.answer) {
-                            questionRemember.remove(question)
-                            Toast.makeText(context, "You are right!",Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(context, "You are wrong...",Toast.LENGTH_SHORT).show()
-                        } },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = Color.Green,
-                            contentColor = Color.White
-                        )
+                Column(
+                    verticalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Paragraph(text = question.question, modifier = Modifier.padding(5.dp), fontSize = 15)
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceEvenly
                     ) {
-                        Text(text = "True")
-                    }
-                    Button(
-                        onClick = { if (!question.answer) {
-                            questionRemember.remove(question)
-                            Toast.makeText(context, "You are right!",Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(context, "You are wrong...",Toast.LENGTH_SHORT).show()
-                        } },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = Color.Red,
-                            contentColor = Color.White
-                        )
-                    ) {
-                        Text(text = "False")
+                        Button(
+                            onClick = { if (question.answer) {
+                                questionRemember.remove(question)
+                                Toast.makeText(context, "You are right!",Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(context, "You are wrong...",Toast.LENGTH_SHORT).show()
+                            } },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Green,
+                                contentColor = Color.White
+                            )
+                        ) {
+                            Text(text = "True")
+                        }
+                        Button(
+                            onClick = { if (!question.answer) {
+                                questionRemember.remove(question)
+                                Toast.makeText(context, "You are right!",Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(context, "You are wrong...",Toast.LENGTH_SHORT).show()
+                            } },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Red,
+                                contentColor = Color.White
+                            )
+                        ) {
+                            Text(text = "False")
+                        }
                     }
                 }
             }

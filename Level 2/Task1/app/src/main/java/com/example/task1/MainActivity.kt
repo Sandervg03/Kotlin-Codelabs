@@ -91,7 +91,6 @@ fun ScreenContent(paddingValues: PaddingValues) {
         )
             {
             items(questionRemember) { question ->
-                val answer: Boolean = question.answer
                 Paragraph(text = question.question, modifier = Modifier.padding(5.dp), fontSize = 15)
                 Row(horizontalArrangement = Arrangement.SpaceAround) {
                     Button(

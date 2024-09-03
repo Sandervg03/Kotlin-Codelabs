@@ -5,12 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac33147e-57c1-45f5-8053-ef8bf2a9d9c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HVA Kotlin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/androidTest/java/com/example/lvl4example/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/java/com/example/lvl4example/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/java/com/example/lvl4example/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/java/com/example/lvl4example/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/java/com/example/lvl4example/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/app/src/test/java/com/example/lvl4example/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Example/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +86,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sande/OneDrive/Bureaublad/coding/HVA Kotlin/Level 3",
+    "last_opened_file_path": "C:/Users/sande/OneDrive/Bureaublad/coding/HVA Kotlin",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>

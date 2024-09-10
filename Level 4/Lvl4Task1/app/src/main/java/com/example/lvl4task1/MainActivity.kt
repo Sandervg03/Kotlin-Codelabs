@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -61,9 +62,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier
-    ) {
+    Column(modifier = modifier) {
         NavHost(navController = navController, startDestination = PetsScreens.CatsScreen.route) {
 
             composable(route = PetsScreens.CatsScreen.route) {

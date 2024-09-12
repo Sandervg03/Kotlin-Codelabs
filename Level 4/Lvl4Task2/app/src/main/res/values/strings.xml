@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lvl4Task2</string>
+
+    <string name="search_bar">Search for a movie by name</string>
+</resources>

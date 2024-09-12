@@ -4,47 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac33147e-57c1-45f5-8053-ef8bf2a9d9c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/androidTest/java/com/example/lvl4task2/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/java/com/example/lvl4task2/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/java/com/example/lvl4task2/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/java/com/example/lvl4task2/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/java/com/example/lvl4task2/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/test/java/com/example/lvl4task2/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ac33147e-57c1-45f5-8053-ef8bf2a9d9c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sande/OneDrive/Bureaublad/Private/Kotlin-Codelabs&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sande/OneDrive/Bureaublad/coding/Kotlin-Codelabs/Level 4/Lvl4Task2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sande\OneDrive\Bureaublad\coding\HVA Kotlin\Level 3" />

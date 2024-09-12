@@ -24,29 +24,33 @@ class MovieDetailsScreen {
                 .fillMaxSize()
         ) {
             AsyncImage(
-                model = "https://image.tmdb.org/t/p/w500/${viewModel.selectedMovie.image}",
-                contentDescription = viewModel.selectedMovie.name,
+                model = "https://image.tmdb.org/t/p/w500/${viewModel.selectedMovie.backdropPath}",
+                contentDescription = viewModel.selectedMovie.title,
                 modifier = Modifier
                     .fillMaxWidth()
             )
             Row {
                 AsyncImage(
-                    model = "https://image.tmdb.org/t/p/w500/${viewModel.selectedMovie.image}",
-                    contentDescription = viewModel.selectedMovie.name,
+                    model = "https://image.tmdb.org/t/p/w500/${viewModel.selectedMovie.backdropPath}",
+                    contentDescription = viewModel.selectedMovie.title,
                     modifier = Modifier
                         .height(80.dp)
                         .padding(20.dp)
                         .fillMaxWidth(0.3f)
                 )
                 Column {
-                    Text(
-                        text = viewModel.selectedMovie.name,
-                        fontSize = 30.sp
-                    )
-                    Text(
-                        text = viewModel.selectedMovie.description,
-                        fontSize = 16.sp
-                    )
+                    viewModel.selectedMovie.title?.let {
+                        Text(
+                            text = it,
+                            fontSize = 30.sp
+                        )
+                    }
+                    viewModel.selectedMovie.overview?.let {
+                        Text(
+                            text = it,
+                            fontSize = 16.sp
+                        )
+                    }
                 }
             }
         }

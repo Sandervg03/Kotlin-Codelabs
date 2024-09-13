@@ -1,11 +1,12 @@
 package com.example.lvl4task2.viewmodel
 
+import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.lvl4task2.data.api.util.Response
+import com.example.lvl4task2.data.api.util.Resource
 import com.example.lvl4task2.data.models.Movie
 import com.example.lvl4task2.data.models.ResponseResult
 import com.example.lvl4task2.repository.MovieRepository
@@ -23,14 +24,14 @@ class MovieViewModel: ViewModel() {
 
     private val _movieRepository: MovieRepository = MovieRepository()
 
-    val movieResource: LiveData<Response<ResponseResult>>
+    val movieResource: LiveData<Resource<ResponseResult>>
         get() = _movieResource
 
-    private val _movieResource: MutableLiveData<Response<ResponseResult>> =
-        MutableLiveData(Response.Empty())
+    private val _movieResource: MutableLiveData<Resource<ResponseResult>> =
+        MutableLiveData(Resource.Empty())
 
-    fun getMovie(movie: String) {
-        _movieResource.value = Response.Loading()
+    fun updateMovieResource(movie: String) {
+        _movieResource.value = Resource.Loading()
 
         viewModelScope.launch {
             _movieResource.value = _movieRepository.getMovie(movie)

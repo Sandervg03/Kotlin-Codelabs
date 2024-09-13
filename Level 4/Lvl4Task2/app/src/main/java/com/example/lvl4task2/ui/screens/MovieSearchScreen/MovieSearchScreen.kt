@@ -1,5 +1,6 @@
 package com.example.lvl4task2.ui.screens.MovieSearchScreen
 
+import android.util.Log
 import androidx.compose.material.icons.Icons
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -12,6 +13,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.rounded.Clear
 import androidx.compose.material.icons.rounded.Search
+import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -30,7 +32,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
 import com.example.lvl4task2.R
-import com.example.lvl4task2.data.api.util.Response
+import com.example.lvl4task2.data.api.util.Resource
 import com.example.lvl4task2.data.models.ResponseResult
 import com.example.lvl4task2.ui.screens.MovieLibraryScreens
 import com.example.lvl4task2.viewmodel.MovieViewModel
@@ -91,7 +93,7 @@ class MovieSearchScreen {
                     tint = Color.White,
                     modifier = Modifier.clickable {
                         if (userInput.isNotBlank()) {
-                            viewModel.getMovie(userInput)
+                            viewModel.updateMovieResource(userInput)
                         }
                     }
                 )
@@ -104,7 +106,7 @@ class MovieSearchScreen {
         navController: NavHostController,
         viewModel: MovieViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
     ){
-        val movieResource: Response<ResponseResult>? by viewModel.movieResource.observeAsState()
+        val movieResource: Resource<ResponseResult>? by viewModel.movieResource.observeAsState()
         
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -112,12 +114,12 @@ class MovieSearchScreen {
             verticalArrangement = Arrangement.Center
         ) {
             when(movieResource) {
-                is Response.Success ->
+                is Resource.Success ->
                     LazyVerticalGrid(
                         columns = GridCells.Fixed(3)
                     ) {
                         items(
-                            items = (movieResource as Response.Success<ResponseResult>).data!!.results,
+                            items = (movieResource as Resource.Success<ResponseResult>).data!!.results,
                             itemContent = {
                                 AsyncImage(
                                     model = it.backdropPath,
@@ -130,19 +132,19 @@ class MovieSearchScreen {
                             }
                         )
                     }
-                is Response.Error ->
+                is Resource.Error ->
                     Text(
-                        text = (movieResource as Response.Error<ResponseResult>).message!!,
+                        text = (movieResource as Resource.Error<ResponseResult>).message!!,
                         fontSize = 30.sp,
                         color = Color.Red
                     )
-                is Response.Empty ->
+                is Resource.Empty ->
                     Text(
                         text = "Search for a movie!",
                         fontSize = 30.sp,
                         color = Color.White
                     )
-                is Response.Loading ->
+                is Resource.Loading ->
                     Text(
                         text = "Loading...",
                         fontSize = 30.sp,

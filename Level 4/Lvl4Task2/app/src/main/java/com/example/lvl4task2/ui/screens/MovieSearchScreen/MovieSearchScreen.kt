@@ -1,6 +1,5 @@
 package com.example.lvl4task2.ui.screens.MovieSearchScreen
 
-import android.util.Log
 import androidx.compose.material.icons.Icons
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -13,7 +12,6 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.rounded.Clear
 import androidx.compose.material.icons.rounded.Search
-import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -46,8 +44,13 @@ class MovieSearchScreen {
                 .fillMaxSize()
                 .background(color = Color.DarkGray)
         ) {
+            val movieResource: Resource<ResponseResult>? by viewModel.movieResource.observeAsState()
             SearchBar(viewModel = viewModel)
-            MovieSearchResults(navController = navController)
+            MovieSearchResults(
+                navController = navController,
+                movieResource = movieResource,
+                viewModel = viewModel
+            )
         }
     }
 
@@ -104,10 +107,9 @@ class MovieSearchScreen {
     @Composable
     private fun MovieSearchResults(
         navController: NavHostController,
-        viewModel: MovieViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
+        movieResource: Resource<ResponseResult>?,
+        viewModel: MovieViewModel
     ){
-        val movieResource: Resource<ResponseResult>? by viewModel.movieResource.observeAsState()
-        
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -116,13 +118,14 @@ class MovieSearchScreen {
             when(movieResource) {
                 is Resource.Success ->
                     LazyVerticalGrid(
-                        columns = GridCells.Fixed(3)
+                        columns = GridCells.Fixed(3),
+                        modifier = Modifier.fillMaxWidth()
                     ) {
                         items(
-                            items = (movieResource as Resource.Success<ResponseResult>).data!!.results,
+                            items = movieResource.data!!.results,
                             itemContent = {
                                 AsyncImage(
-                                    model = it.backdropPath,
+                                    model = "https://image.tmdb.org/t/p/w500/${it.posterPath}",
                                     contentDescription = it.title,
                                     modifier = Modifier.clickable {
                                         viewModel.selectedMovie = it
@@ -134,7 +137,7 @@ class MovieSearchScreen {
                     }
                 is Resource.Error ->
                     Text(
-                        text = (movieResource as Resource.Error<ResponseResult>).message!!,
+                        text = movieResource.message!!,
                         fontSize = 30.sp,
                         color = Color.Red
                     )

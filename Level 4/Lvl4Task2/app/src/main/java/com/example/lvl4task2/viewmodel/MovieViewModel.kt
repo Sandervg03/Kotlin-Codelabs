@@ -2,6 +2,7 @@ package com.example.lvl4task2.viewmodel
 
 import android.util.Log
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -14,11 +15,18 @@ import kotlinx.coroutines.launch
 
 class MovieViewModel: ViewModel() {
 
-    private lateinit var _selectedMovie: MutableState<Movie>
+    private val _selectedMovie: MutableState<Movie?> =
+        mutableStateOf<Movie?>(null)
 
-    var selectedMovie: Movie
-        get() = _selectedMovie.value
-        set(movie){
+    var selectedMovie: Movie?
+        get() {
+            return if (_selectedMovie.value != null) {
+                _selectedMovie.value!!
+            } else {
+                null
+            }
+        }
+        set(movie: Movie?) {
             _selectedMovie.value = movie
         }
 

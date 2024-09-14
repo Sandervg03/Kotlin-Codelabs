@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.rounded.Clear
 import androidx.compose.material.icons.rounded.Search
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -148,10 +149,9 @@ class MovieSearchScreen {
                         color = Color.White
                     )
                 is Resource.Loading ->
-                    Text(
-                        text = "Loading...",
-                        fontSize = 30.sp,
-                        color = Color.White
+                    CircularProgressIndicator(
+                        trackColor = Color.Blue,
+                        color = Color.DarkGray
                     )
                 else ->
                     Text(

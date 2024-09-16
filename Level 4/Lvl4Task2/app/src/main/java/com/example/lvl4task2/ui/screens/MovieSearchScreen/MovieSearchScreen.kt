@@ -45,11 +45,9 @@ class MovieSearchScreen {
                 .fillMaxSize()
                 .background(color = Color.DarkGray)
         ) {
-            val movieResource: Resource<ResponseResult>? by viewModel.movieResource.observeAsState()
             SearchBar(viewModel = viewModel)
             MovieSearchResults(
                 navController = navController,
-                movieResource = movieResource,
                 viewModel = viewModel
             )
         }
@@ -108,9 +106,9 @@ class MovieSearchScreen {
     @Composable
     private fun MovieSearchResults(
         navController: NavHostController,
-        movieResource: Resource<ResponseResult>?,
         viewModel: MovieViewModel
     ){
+        val movieResource: Resource<ResponseResult>? by viewModel.movieResource.observeAsState()
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -123,7 +121,7 @@ class MovieSearchScreen {
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         items(
-                            items = movieResource.data!!.results,
+                            items = (movieResource as Resource.Success<ResponseResult>).data!!.results,
                             itemContent = {
                                 AsyncImage(
                                     model = "https://image.tmdb.org/t/p/w500/${it.posterPath}",
@@ -138,7 +136,7 @@ class MovieSearchScreen {
                     }
                 is Resource.Error ->
                     Text(
-                        text = movieResource.message!!,
+                        text = (movieResource as Resource.Error<ResponseResult>).message!!,
                         fontSize = 30.sp,
                         color = Color.Red
                     )

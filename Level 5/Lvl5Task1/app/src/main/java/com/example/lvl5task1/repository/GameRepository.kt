@@ -1,6 +1,7 @@
 package com.example.lvl5task1.repository
 
 import android.content.Context
+import androidx.lifecycle.LiveData
 import com.example.lvl5task1.data.database.GameDao
 import com.example.lvl5task1.data.database.GameRoomDatabase
 import com.example.lvl5task1.data.model.Game
@@ -30,7 +31,7 @@ class GameRepository(context: Context) {
         return gameDao.deleteAllGames()
     }
 
-    fun getGames(): List<Game> {
+    fun getGames(): LiveData<List<Game>> {
         return gameDao.getGames()
     }
 

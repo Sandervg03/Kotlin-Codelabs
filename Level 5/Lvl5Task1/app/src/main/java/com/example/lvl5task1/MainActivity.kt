@@ -50,21 +50,17 @@ class MainActivity : ComponentActivity() {
         navController: NavHostController,
         modifier: Modifier
         ) {
+        val application = application
+        val viewModel: GameViewModel = GameViewModel(application)
 
-        val viewModel: GameViewModel = viewModel()
+        NavHost(navController = navController, startDestination = Screens.HomeScreen.route) {
 
-        Column(
-            modifier = modifier
-        ) {
-            NavHost(navController = navController, startDestination = Screens.HomeScreen.route) {
+            composable(route = Screens.HomeScreen.route) {
+                HomeScreen().Create(navController = navController, viewModel = viewModel)
+            }
 
-                composable(route = Screens.HomeScreen.route) {
-                    HomeScreen().Create(navController = navController, viewModel = viewModel)
-                }
-
-                composable(route = Screens.AddScreen.route) {
-                    AddScreen().Create(navController = navController, viewModel = viewModel)
-                }
+            composable(route = Screens.AddScreen.route) {
+                AddScreen().Create(navController = navController, viewModel = viewModel)
             }
         }
     }

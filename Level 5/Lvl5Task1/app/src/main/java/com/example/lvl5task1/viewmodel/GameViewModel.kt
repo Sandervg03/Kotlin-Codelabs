@@ -2,6 +2,7 @@ package com.example.lvl5task1.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import com.example.lvl5task1.data.model.Game
 import com.example.lvl5task1.repository.GameRepository
 import kotlinx.coroutines.CoroutineScope
@@ -14,7 +15,7 @@ class GameViewModel(application: Application): AndroidViewModel(application) {
 
     private val mainScope = CoroutineScope(Dispatchers.IO)
 
-    val gameBackLog: List<Game> = repository.getGames()
+    val gameBackLog: LiveData<List<Game>> = repository.getGames()
 
     fun addGame(game: Game) {
         mainScope.launch {

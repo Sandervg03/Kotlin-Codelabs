@@ -18,10 +18,10 @@ abstract class GameRoomDatabase: RoomDatabase() {
         private const val DATABASE_NAME: String = "GAME_DATABASE"
 
         @Volatile
-        var INSTANCE: GameRoomDatabase? = null
+        private var INSTANCE: GameRoomDatabase? = null
 
         fun getDatabase(context: Context): GameRoomDatabase {
-            return INSTANCE?: synchronized(GameRoomDatabase::class.java) {
+            return INSTANCE?: synchronized(this) {
                 val instance: GameRoomDatabase = Room.databaseBuilder(
                     context = context.applicationContext,
                     klass = GameRoomDatabase::class.java,
@@ -31,6 +31,5 @@ abstract class GameRoomDatabase: RoomDatabase() {
                 instance
             }
         }
-
     }
 }

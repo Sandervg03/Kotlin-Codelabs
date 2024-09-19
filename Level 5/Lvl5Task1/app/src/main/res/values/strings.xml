@@ -14,7 +14,7 @@
     <string name="borderlands_3_text">Borderlands 3</string>
     <string name="pc_text">PC</string>
     <string name="release_07_09_2019_text">Release: 07-09-2019</string>
-    <string name="snackbar_msg">Deleted backlog. Are you sure? Press Undo.</string>
+    <string name="snackbar_msg">Deleted backlog. Mistake? Press undo.</string>
     <string name="empty_title">Game title should not be empty.</string>
     <string name="empty_month">Month of release must not be empty.</string>
     <string name="wrong_year">Year of release must have four digits.</string>

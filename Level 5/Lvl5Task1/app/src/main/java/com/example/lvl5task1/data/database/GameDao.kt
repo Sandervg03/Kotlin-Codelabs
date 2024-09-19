@@ -1,5 +1,6 @@
 package com.example.lvl5task1.data.database
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -10,7 +11,7 @@ import com.example.lvl5task1.data.model.Game
 interface GameDao {
 
     @Query("SELECT * FROM game ORDER BY `release` ASC")
-    fun getGames(): List<Game>
+    fun getGames(): LiveData<List<Game>>
 
     @Insert
     suspend fun addGame(game: Game)

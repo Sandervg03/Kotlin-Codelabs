@@ -5,7 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac33147e-57c1-45f5-8053-ef8bf2a9d9c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 4/Lvl4Task2/app/src/main/java/com/example/lvl4task2/data/api/ApiKey.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/androidTest/java/com/example/lvl5task2/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/java/com/example/lvl5task2/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/java/com/example/lvl5task2/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/java/com/example/lvl5task2/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/java/com/example/lvl5task2/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/app/src/test/java/com/example/lvl5task2/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Level 5/Lvl5Task2/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +65,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Sandervg03/Kotlin-Codelabs.git",
-    "accountId": "2bff0a95-f853-4e79-80d3-2763fbf9c0c7"
+    "accountId": "c3ef2a4a-7e9d-41d4-a6b7-c8a3cf4c4917"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -48,7 +86,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sande/OneDrive/Bureaublad/coding/Kotlin-Codelabs/Level 5/Lvl5Task1",
+    "last_opened_file_path": "C:/Users/sande/OneDrive/Bureaublad/Private/Kotlin-Codelabs",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>

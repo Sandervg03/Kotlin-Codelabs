@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lvl5Task2</string>
+    <string name="title">Rock, Paper, Scissors</string>
+    <string name="history">Win: %s Draw: %s Lose: %s</string>
+    <string name="instructions">Instructions: select rock, paper or scissors to play</string>
+    <string name="history_title">Your all time statistics</string>
+    <string name="win_computer">Computer wins!</string>
+    <string name="win_player">You win!</string>
+    <string name="draw">Draw...</string>
+</resources>
